@@ -1,6 +1,6 @@
 import React from 'react';
 import LanguagesNav from './LanguagesNav.js';
-import fetchPopularRepos from '../utils/api.js';
+import {fetchPopularRepos} from '../utils/api.js';
 import ReposGrid from './ReposGrid.js';
 
 export default class Popular extends React.Component {
