@@ -1,6 +1,7 @@
 import React from 'react';
 import LanguagesNav from './LanguagesNav.js';
 import fetchPopularRepos from '../utils/api.js';
+import ReposGrid from './ReposGrid.js';
 
 export default class Popular extends React.Component {
   constructor(props) {
@@ -53,7 +54,7 @@ export default class Popular extends React.Component {
         />
         {this.isLoading() && <p>Loading...</p>}
         {error && <p>{error}</p>}
-        {repos[selectedLanguage] && <p>{JSON.stringify(repos[selectedLanguage])}</p>}
+        {repos[selectedLanguage] && <ReposGrid repos={repos[selectedLanguage]}/>}
       </>
     )
   }
