@@ -32,7 +32,7 @@ export default class Battle extends React.Component {
     const { playerOne, playerTwo, battle } = this.state;
 
     if (battle) {
-      return <Result />
+      return <Result playerOne={playerOne} playerTwo={playerTwo}/>
     }
 
     return (

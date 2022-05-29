@@ -1,3 +1,5 @@
+const config = require('../../config.js');
+
 function getErrorMsg(message, username) {
   if (message === 'Not Found') {
     return `${username} doesn't exist`;
@@ -16,16 +18,19 @@ function getProfile(username) {
     return profile
   })
 }
-
-function getRepos(username) {
-  return fetch(`https://api.github.com/users/${username}/repos&per_page=100`)
-  .then(res => res.json())
-  .then(repos => {
-    console.log('get a username repos', repos);
-    if(repos.message) {
+function getRepos (username) {
+  return fetch(`https://api.github.com/users/${username}/repos`, {
+    headers: {
+      'Authorization': `${config.api_token}`
+    }
+  })
+  .then((res) => res.json())
+  .then((repos) => {
+    if (repos.message) {
       throw new Error(getErrorMsg(repos.message, username))
     }
-    return repos;
+
+    return repos
   })
 }
 
@@ -49,8 +54,8 @@ function sortPlayers (players) {
   return players.sort((a, b) => b.score - a.score)
 }
 
-export function batter(players) {
-  return Promise.all([getUserData(players[0]), getUserData(player[1])])
+export function battle(players) {
+  return Promise.all([getUserData(players[0]), getUserData(players[1])])
         .then(results => sortPlayers(results))
 }
 
