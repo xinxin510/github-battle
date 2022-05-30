@@ -1,5 +1,5 @@
 import React from 'react';
-import withHover from './withHover.js';
+import Hover from './Hover.js';
 
 const styles = {
   container: {
@@ -23,13 +23,16 @@ const styles = {
   }
 }
 
-function Tooltip ({ text, children, hovering }) {
+export default function Tooltip ({ text, children }) {
   return (
-    <div style={styles.container}>
-      {hovering === true && <div style={styles.tooltip}>{text}</div>}
-      {children}
-    </div>
+    <Hover
+      render={(hovering) => (
+        <div style={styles.container}>
+          {hovering === true && <div style={styles.tooltip}>{text}</div>}
+          {children}
+        </div>
+      )}
+    >
+    </Hover>
   )
 }
-
-export default withHover(Tooltip);
