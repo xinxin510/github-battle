@@ -21,3 +21,20 @@ This project is a "Github Battle" app. You'll be able to see the most popular re
 4. Toggle between light and dark theme.
 5. Implemented custom tooltips to help users understand the information presented on each card.
 
+## Installation
+1. Install dependencies:
+```bash
+npm install
+```
+2. Get your API key from [GitHub REST API](https://docs.github.com/en/rest)
+3. Create a file named as `config.js`
+```
+module.exports = {
+  api_token: 'YOUR_KEY_HERE'
+}
+```
+4. Run webpack in development with:
+```bash
+npm run start
+```
+5. Open the project in your web browser http://localhost:8080/ 
