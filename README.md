@@ -16,10 +16,11 @@ A single-page mobile friendly app built with React using Github API. Wrote confi
 ## Description
 In this app, you can discover the most popular repos for a variety of languages on GitHub in a fun/gamified experience as well as battle between two Github users to see who has a better profile.
 1. Check the top 30 popular repos for different languages, including JavaScript, Ruby, Java, CSS and Python.
+![GitHub Battle - Homepage Refresh](https://user-images.githubusercontent.com/84343573/179129549-4e072c9a-b848-4642-bf94-288765dfebc2.gif)
 2. Click any GitHub username to visit this user's profile.
-3. Choose two GitHub users to battle and see who has the better profile. The score is calculated based on the combination of both the numbers of the profile's followers and stars. The weight of followers vs stars is 3:1.
-4. Toggle between light and dark theme.
-5. Implemented custom tooltips to help users understand the information presented on each card.
+4. Choose two GitHub users to battle and see who has the better profile. The score is calculated based on the combination of both the numbers of the profile's followers and stars. The weight of followers vs stars is 3:1.
+5. Toggle between light and dark theme.
+6. Implemented custom tooltips to help users understand the information presented on each card.
 
 ## Installation
 1. Install dependencies:
