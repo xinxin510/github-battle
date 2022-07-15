@@ -18,9 +18,12 @@ In this app, you can discover the most popular repos for a variety of languages 
 1. Check the top 30 popular repos for different languages, including JavaScript, Ruby, Java, CSS and Python.
 ![GitHub Battle - Homepage Refresh](https://user-images.githubusercontent.com/84343573/179129549-4e072c9a-b848-4642-bf94-288765dfebc2.gif)
 2. Click any GitHub username to visit this user's profile.
-4. Choose two GitHub users to battle and see who has the better profile. The score is calculated based on the combination of both the numbers of the profile's followers and stars. The weight of followers vs stars is 3:1.
-5. Toggle between light and dark theme.
-6. Implemented custom tooltips to help users understand the information presented on each card.
+3. Choose two GitHub users to battle and see who has the better profile. The score is calculated based on the combination of both the numbers of the profile's followers and stars. The weight of followers vs stars is 3:1.
+![GitHub Battle - Game](https://user-images.githubusercontent.com/84343573/179129972-6c4899e7-409a-43ed-9b19-28c7ff0e9e22.gif)
+4. Toggle between light and dark theme.
+![GitHub Battle - Toggle](https://user-images.githubusercontent.com/84343573/179130200-f3535f4e-184c-4450-aeb3-f72661767a3f.gif)
+5. Implemented custom tooltips to help users understand the information presented on each card.
+![GitHub Battle - Tooltip](https://user-images.githubusercontent.com/84343573/179130418-a10f244b-360e-4311-834f-b9dcf457ee50.gif)
 
 ## Installation
 1. Install dependencies:
