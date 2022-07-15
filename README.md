@@ -19,7 +19,7 @@ In this app, you can discover the most popular repos for a variety of languages 
 ![GitHub Battle - Homepage Refresh](https://user-images.githubusercontent.com/84343573/179129549-4e072c9a-b848-4642-bf94-288765dfebc2.gif)
 2. Click any GitHub username to visit this user's profile.
 3. Choose two GitHub users to battle and see who has the better profile. The score is calculated based on the combination of both the numbers of the profile's followers and stars. The weight of followers vs stars is 3:1.
-![GitHub Battle - Game](https://user-images.githubusercontent.com/84343573/179129972-6c4899e7-409a-43ed-9b19-28c7ff0e9e22.gif =x500)
+![GitHub Battle - Game](https://user-images.githubusercontent.com/84343573/179129972-6c4899e7-409a-43ed-9b19-28c7ff0e9e22.gif)
 4. Toggle between light and dark theme.
 ![GitHub Battle - Toggle](https://user-images.githubusercontent.com/84343573/179130200-f3535f4e-184c-4450-aeb3-f72661767a3f.gif)
 5. Implemented custom tooltips to help users understand the information presented on each card.
